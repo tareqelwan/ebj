@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Salesman list</h1>
-    
-    {% for sman in data %}
-        <h3>{{sman.name}}</h3>
-    {% endfor %}
+{% extends 'base.html' %}  
+{% block body %}
+<h1>Salesmen list</h1>
 
-</body>
-</html>
+    {% for sman in data %}                
+        <h4>{{sman.name}}</h3>        
+    {% endfor %}
+    
+{% endblock body %}
